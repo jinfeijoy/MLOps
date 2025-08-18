@@ -55,3 +55,66 @@
     }
   )
   ```
+
+# building ML API
+* flash framework
+```
+from flask import Flask, abort
+
+app = Flask(__name__)
+
+@app.route('/')
+def two_hundred():
+  return "<h1> 200! all good </h1>'
+
+@app.route('/error')
+def error():
+  abort(500, 'oooh some error!')
+
+if __name__ == '__main__':
+  app.run(debug=True, port=8000, host='0.0.0.0')
+
+```
+* [building an API with Flask](https://www.coursera.org/learn/python-mlops-duke/lecture/ZuUNp/building-an-api-with-flask)
+```
+from flask import Flask, request, jsonify
+import torch
+import numpy as np
+from transformers import RobertaTokenizer
+import onnxruntime
+
+app = Flask(__name__)
+tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+session = onnxruntime.InferenceSession('roberta-sequence-classfication-09.onnx')
+
+def to_numpy(tensor):
+  return (
+    tensor.detach().cpi.numpy() if tensor.requires_grad else tensor.cpu().numpy()
+)
+
+@app.route('/')
+def home():
+  return 'RoBERTa sentiment analysis'
+
+@app.route('/predict', method = ['POST'])
+def predict():
+  input_ids = torch.tensor(
+    tokenizer.encode(request.json[0], add_special_tokens=True)
+  ).unsqueeze(
+    0
+  )
+  inputs = {session.get_inputs()[0].name: to_numpy(input_ids)}
+  out = session.run(None, inputs)
+
+  result = np.argmax(out)
+  return jsonify({'positive': bool(result)})
+
+if __name__=='__main__':
+  app.run(host='0.0.0.0', port=5000, debut=True)
+
+
+# curl -X POST --header 'Content-Type: application/json' --data '['using curl is not to my liking'] http://127.0.0.1:5000/predict
+```
+* FastAPI framework
+* builiding an API with FastAPI
+* 
