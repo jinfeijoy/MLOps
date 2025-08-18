@@ -4,7 +4,8 @@
   import click
 
   @click.command()
-  @click.option('--count', default=1)
+  @click.argument('count', type=)
+  @click.option('--count', default=1) # when run script in commend line, just add --count, the output will perform this function 
   def hello(count):
       for x in range(count):
           click.echo('Hello World!')
