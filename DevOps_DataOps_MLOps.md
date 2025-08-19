@@ -30,7 +30,7 @@
 * Requirements File - A text file containing a list of Python package dependencies used by an application. 
 * [End to End MLOps HuggingFace Spaces](https://www.coursera.org/learn/devops-dataops-mlops-duke/lecture/e6usf/end-to-end-mlops-huggingface-spaces)
   <img width="941" height="733" alt="image" src="https://github.com/user-attachments/assets/f9bd5391-e8da-4e88-9c97-c2598532a122" />
-* 
+* makefile, docfile, requirement text
 
 # Essential Math and Data Science
 
