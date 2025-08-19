@@ -20,7 +20,7 @@
 * Maturity Model - Concept in MLOps defining ascending levels, typically 4-5, of MLOps sophistication and effectiveness, from manual, siloed, unreliable to scalable, autonomous, and resilient systems.
 * Data Ops - Specific focus on use of DevOps concepts and automation principles to manage data workloads like aggregation, transformation, storage, analysis, etc.
 * [Feature Store](https://learn.microsoft.com/en-us/azure/databricks/machine-learning/feature-store/) - Central repository to manage, store, and serve ML features for model building and retraining. Optimizes data pipelines and reuse.
- <img width="1327" height="739" alt="image" src="https://github.com/user-attachments/assets/51d73483-d96d-4dde-8957-3904673b12aa" />
+  <img width="1327" height="739" alt="image" src="https://github.com/user-attachments/assets/51d73483-d96d-4dde-8957-3904673b12aa" />
 * Infrastructure as Code: Managing and provisioning infrastructure through code instead of manual processes. This allows environment configuration, deployment, and management to be consistent and repeatable across development stages.
 * [Data drift](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python&view=azureml-api-1) refers to changes in the statistical properties of data over time, which can negatively impact the performance of machine learning models, it's necessary to re-trian the model
 * End-to-End MLOps - Fully automating the machine learning lifecycle from model development through deployment and hosting via platforms like Hugging Face Spaces.
