@@ -32,7 +32,6 @@
   <img width="941" height="733" alt="image" src="https://github.com/user-attachments/assets/f9bd5391-e8da-4e88-9c97-c2598532a122" />
 * makefile, docfile, requirement text
 
-# Essential Math and Data Science
 
 # Operations Pipelines: DevOps, DataOps, MLOps
 
