@@ -34,7 +34,14 @@
 
 
 # Operations Pipelines: DevOps, DataOps, MLOps
-
+<img width="1207" height="722" alt="image" src="https://github.com/user-attachments/assets/8dfade8b-eddd-4adb-8439-2b41c43e948a" />
+* github template: https://github.com/github-education-resources/codespaces-project-template-py
+    * [github codespace](https://www.coursera.org/learn/devops-dataops-mlops-duke/lecture/9a5Ud/demo-of-github-codespaces)
+        * prebuild configuration (container, makefile)
+    * github copilot lab in github, can translate between different languages (extensions)
+    * github action: new workflow, better to use makefile 
+* [databricks](https://www.coursera.org/learn/devops-dataops-mlops-duke/lecture/j2ZVa/query-databricks-pipeline)
+    *  
 # End to End MLOps and AIOps
 
 # Rust for MLOps: The Practical Transition from Python to Rust
