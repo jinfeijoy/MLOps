@@ -41,7 +41,15 @@
     * github copilot lab in github, can translate between different languages (extensions)
     * github action: new workflow, better to use makefile 
 * [databricks](https://www.coursera.org/learn/devops-dataops-mlops-duke/lecture/j2ZVa/query-databricks-pipeline)
-    *  
+
 # End to End MLOps and AIOps
+* Container
+  * AWS cloud (docker) -> push to ECR -> AWS App runner
+  * AWS cloud (docker) -> AWS code build (container) -> push to ECR -> AWS App runner
+  * ```docker build, docker run, docker tag, docker push```
+* ``Microservice`` : models (download / automl / build / endpoint) --> container registry
+* <img width="1255" height="729" alt="image" src="https://github.com/user-attachments/assets/b85b0a3d-7d96-4fd7-bed1-eb10492d9c4a" />
+* <img width="1118" height="769" alt="image" src="https://github.com/user-attachments/assets/cdad3255-d651-4159-9473-3bad6476e3fc" />
+
 
 # Rust for MLOps: The Practical Transition from Python to Rust
